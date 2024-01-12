@@ -8,6 +8,6 @@ document.getElementById('login-submit').addEventListener('click',function()
 
     const passwordField = document.getElementById('user-password');
     const password = passwordField.value;
-    console.log( email, password);
+    console.log(email, password);
 })
 
