@@ -22,8 +22,8 @@ body
 .loggin
 {
     width: 420px;
-    background-color: rgb(20, 15, 15);
-    color: beige;
+   
+    color: rgb(236, 9, 21);
     padding: 30px 40px;
     border-radius: 10px;
 }
@@ -38,6 +38,7 @@ body
     height: 50px;
     
     margin: 35px 0;
+    transition:  bottom 0.3s;
 }
 .input-box input
 {
@@ -55,7 +56,7 @@ body
 }
 .input-box input::placeholder
 {
-    color: white;
+    color: rgb(44, 2, 2);
 
 }
 .input-box i
@@ -79,7 +80,7 @@ body
 .remember-forget label input
 
 {
-    accent-color: white;
+    accent-color: rgb(211, 8, 8);
     margin-right: 2px;
 }
 .remember-forget a
