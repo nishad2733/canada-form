@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/img/image-1200x800.jpg);
+    
+}
+.body-1
+{
+    position: absolute;
+}
+.loggin
+{
+    width: 420px;
+    background-color: rgb(20, 15, 15);
+    color: beige;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+.loggin h1
+{
+    font-size: 40px;
+    text-align: center;
+}
+.loggin .input-box
+{   position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 35px 0;
+}
+.input-box input
+{
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgb(80, 71, 71);
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255, .2);
+    border-radius: 45px ;
+    font-size: 20px;
+    color: azure;
+    padding: 20px ;
+}
+.input-box input::placeholder
+{
+    color: white;
+
+}
+.input-box i
+{
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    transform: translate(-50%);
+    font-size: 15px;
+}
+
+.loggin .remember-forget
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    margin: -15px 0 15px; 
+   
+    
+}
+.remember-forget label input
+
+{
+    accent-color: white;
+    margin-right: 2px;
+}
+.remember-forget a
+{
+    color: azure;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.remember-forget a:hover
+{
+    text-decoration: underline;
+}
+.loggin .btn
+{
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    outline: none;
+    font-size: 30px;
+    padding: 0px;
+    color: #333 ; 
+  
+}
+.loggin .registration-link
+{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.registration-link p a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight:  600px;
+}   
+.registration-link p a:hover
+{
+    text-decoration: underline;
+}
