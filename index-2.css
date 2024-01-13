@@ -1,0 +1,166 @@
+.body-section
+{
+    display: flex;
+    align-items: center;  
+}
+.body-section .head-img
+{  
+    margin-top: -5px;  
+}
+.body-section .tittle
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-top: -1px 10px   ;
+
+}
+.body-section .text-decoration
+{
+    border: 1px solid red;
+    border-radius: 5px 3px;
+    padding: 3px;
+    margin-top: 2px 2px;
+}
+.body-section .text-right
+{
+    font-size: 20px;
+    font-weight: 600px;
+    background-color: lightgoldenrodyellow ;
+    border: 4x solid lightgoldenrodyellow ;
+    margin-left: 750px;
+}
+nav li
+{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+nav ul a{
+    text-decoration: none;
+    padding: 0px 23px;
+    color: black;
+    text-transform: uppercase;
+}
+nav li a:hover
+{
+    color: brown;
+    transition: all 0.3s ease 0.4s;
+}
+.new .new-img
+{
+    display: block;
+}
+.new .middle-text
+{
+    font-size: 30px;
+    font-style: initial;
+    margin-left: 300px ;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-around;
+}
+.main-section .main-text
+{   align-items: center ;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: burlywood;
+    padding: 10px;
+}
+.main-section .text-middle
+{
+    font-size: 20px;
+    margin-top: -20px;
+    border: 1px ;
+    border-style: ridge;
+    padding: 10px;
+}
+.main-section-2
+{
+    display: flex;
+    justify-content: space-around;
+}
+.main-section-2 .main-text
+{
+    font-size: 25px;
+    align-items: center ;
+    margin-left: -13%;
+    font-weight: 700;
+    background-color: burlywood;
+    padding: 10px;
+}
+.main-section-2 .text-middle
+{
+    font-size: 20px;
+    margin-top: -20px;
+    border: 1px ;
+    border-style: ridge;
+    padding: 10px;  
+    margin-left: -13%;  
+    
+}
+.main-section-3{
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.main-section-3 .h3-head{
+    font-size: 20px;
+    background-color:burlywood;
+    padding: 10px;
+    margin-left: -15%;  
+    }
+.main-section-3 .ul-declaration-2
+{
+    list-style: none;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-left: -60px;         
+}
+.main-section-3 .middle-text
+{
+    font-size: 18px;
+    margin-left: -40px;
+    border: 1px;
+    border-style: ridge;
+}
+.main-section-4
+{
+    background: rgb(168, 159, 159);
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-4 .ul-declatraion-3 .new-1
+{
+
+    display:inline-block ;
+    margin: 0px 10px;
+    list-style: circle;
+    color: aliceblue;
+    font-size: 20px;
+}
+.main-section-4 .imga 
+{
+    margin-left: 780px;
+    margin-top: 45px;
+}
+.main-section-4 .last
+{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+@media (min-width: 600) {
+
+    .body-section
+{   
+     
+    width: 100%;
+}
+    
+}

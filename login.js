@@ -7,7 +7,13 @@ document.getElementById('login-submit').addEventListener('click',function () {
         const passwordField = document.getElementById('user-password');
         const password = passwordField.value;
         console.log(email, password);
-
+        
+        if(user-email==admin && user-password ==123456 )
+        {
+            window.location.href ='index-2.html'
+        }            
+        
+        
 
 
     })
