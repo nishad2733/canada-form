@@ -1,4 +1,4 @@
-console.log('login hosse nah')
+
 
 document.getElementById('login-submit').addEventListener('click',function () {
         const emailField = document.getElementById('user-email');
@@ -8,12 +8,14 @@ document.getElementById('login-submit').addEventListener('click',function () {
         const password = passwordField.value;
         console.log(email, password);
         
-      
-            window.location.href ='index-2.html'
-         
         
-        
-
+        if(password && email){
+                window.location.href ='./index-2.html'
+        }
+        else{
+                alert('no paaswrd & email entered')
+                console.log()
+        }
 
     })
 

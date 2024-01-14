@@ -1,0 +1,42 @@
+@media only screen and (max-width: 768px) {
+    .main-section {
+        grid-template-columns: 50% 50%;
+    }
+
+    .menubar i {
+        display: inline-block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .body-section .tittle {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .body-section h2,
+    .body-section h4 {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main-section {
+        grid-template-columns: auto;
+    }
+
+    .main-section-4 {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 337px) {
+    .tittle h2, .tittle span{
+        font-size: 14px;
+    }
+    .body-section .text-right {
+    font-size: 12px;
+    }
+}
