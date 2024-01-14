@@ -2,6 +2,7 @@
 {
     display: flex;
     align-items: center;  
+    cursor: pointer; 
 }
 .body-section .head-img
 {  
@@ -13,7 +14,6 @@
     justify-content: space-around;
     margin-left: 10px;
     margin-top: -1px 10px   ;
-
 }
 .body-section .text-decoration
 {
@@ -22,44 +22,113 @@
     padding: 3px;
     margin-top: 2px 2px;
 }
-.body-section .text-right
-{
+.body-section .text-right{
     font-size: 20px;
     font-weight: 600px;
     background-color: lightgoldenrodyellow ;
     border: 4x solid lightgoldenrodyellow ;
     margin-left: 750px;
 }
-nav li
+nav 
 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
-    list-style: none;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-nav ul a{
-    text-decoration: none;
-    padding: 0px 23px;
-    color: black;
-    text-transform: uppercase;
-}
-nav li a:hover
-{
-    color: brown;
-    transition: all 0.3s ease 0.4s;
-}
-.new .new-img
-{
-    display: block;
-}
+    border: 2px solid #EBECF1;
+    border-radius: 40px;
+    animation: slide-in 2s ease-out;
+  }  
+  ul 
+  {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding:0px 70px;
+   
+    list-style-type: none;
+    li:not(:last-child) {
+        margin-right: 60px;
+    }
+li
+ {
+      border: 3px solid transparent;
+      border-radius: 10px;
+      padding: 1px;
+      transition: background 0.2s;
+      a {
+        color: #010c19;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        font-weight: 500;
+      }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        display: block;
+        margin: 12px -12px;
+        padding: 0;
+        background: burlywood;
+        border: 2px solid burlywood;
+        
+        border-radius: 5px;
+        transition: opacity 0.2s, visibility 0.2s;
+        li {
+          margin: -2px 0 0 -2px;
+          width: calc(100% - 20px);
+          line-height: 1.7;
+          a {
+            color: #010811;
+          }
+        }
+      }
+      &:hover {
+        background: burlywood;
+        transition: all .4s ease 0.3s;
+        
+       
+        a {
+          color: #F9F8FD;
+        }
+        ul {
+          visibility: visible;
+          opacity: 1;
+          box-shadow: 0px 3px 5px 2px #EBECF1;
+          li {
+            a {
+              color: #F9F8FD;
+            }
+          }
+        }
+      }
+    }
+  }
+  @keyframes slide-in {
+    
+    30%
+    {
+        top: 20px
+    }
+  }
+  .new .new-img
+  {
+    margin-top: 5%;
+  }
 .new .middle-text
 {
     font-size: 30px;
     font-style: initial;
     margin-left: 300px ;
+    cursor: pointer; 
 }
+.main{
+    border: 1px solid green;
+    border-radius: 2px;
 
+}
 .main-section{
     display: flex;
     justify-content: space-around;
@@ -68,13 +137,15 @@ nav li a:hover
 {   align-items: center ;
     font-size: 25px;
     font-weight: 700;
+    cursor: pointer; 
     background-color: burlywood;
     padding: 10px;
+    margin-left: -10px;
 }
 .main-section .text-middle
-{
+{   cursor: pointer; 
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: 20px;
     border: 1px ;
     border-style: ridge;
     padding: 10px;
@@ -83,6 +154,7 @@ nav li a:hover
 {
     display: flex;
     justify-content: space-around;
+    cursor: pointer; 
 }
 .main-section-2 .main-text
 {
@@ -92,6 +164,7 @@ nav li a:hover
     font-weight: 700;
     background-color: burlywood;
     padding: 10px;
+    cursor: pointer; 
 }
 .main-section-2 .text-middle
 {
@@ -101,31 +174,33 @@ nav li a:hover
     border-style: ridge;
     padding: 10px;  
     margin-left: -13%;  
-    
+    cursor: pointer;    
 }
 .main-section-3{
     display: flex;
     justify-content: space-around;
-
-    
+    cursor: pointer; 
+    margin-left: -2%;  
 }
 .main-section-3 .h3-head{
     font-size: 20px;
     background-color:burlywood;
     padding: 10px;
-    margin-left: -15%;  
+    cursor: pointer;
+    margin-left: 10px;
     }
 .main-section-3 .ul-declaration-2
 {
     list-style: none;
-    font-size: 18px;
-    margin-top: -10px;
-    margin-left: -60px;         
+    font-size: 19px;
+    display: inline-block;
+    margin-left: -60px; 
+           
 }
 .main-section-3 .middle-text
 {
     font-size: 18px;
-    margin-left: -40px;
+    margin-left:40px;
     border: 1px;
     border-style: ridge;
 }
@@ -146,21 +221,11 @@ nav li a:hover
 }
 .main-section-4 .imga 
 {
-    margin-left: 780px;
+    margin-left: 400px;
     margin-top: 45px;
 }
 .main-section-4 .last
 {
     color: aliceblue;
     font-size: 30px;
-}
-
-@media (min-width: 600) {
-
-    .body-section
-{   
-     
-    width: 100%;
-}
-    
 }
